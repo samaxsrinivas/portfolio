@@ -9,7 +9,6 @@ body {
 	margin: auto;
 }
 .mainBody {
-	border: 1px black solid;
 	display: flex;
 	width: 100vw;
 	flex-direction: column;
@@ -17,33 +16,34 @@ body {
 
 
 .mainNav {
+	border: 1px solid black;
 	margin: 0;
 	width: 100vw;
-	height: 50px;
+	height: 100px;
 	display: flex;
 	flex-direction: row;
     }
     
 .leftSide {
-	width: 33.3%;
+	width: 30%;
 	list-style: none;
 	justify-content: flex-start;
+	align-items: center;
 	display: flex;
 	text-decoration: none;
-	z-index: 1;
+	z-index: 1;	
+	padding-left: 50px;
 }
 
 .navItem {
 	flex-direction: row;
 	font-size: 15px;
-	justify-content: flex-start;
-	padding: 20px;
-
+	padding-right: 10px;
+	font-weight: lighter;
 }
 
 .center {
 	width: 100vw;
-	list-style: none;
 	display: flex;
 	z-index: 2;
 }
@@ -53,6 +53,8 @@ body {
 	height: 50px;
 	justify-content: center;
 	align-items: center;
+	align-self: center;
+	align-content: center;
 }
 
 .topHalf {
@@ -74,7 +76,7 @@ body {
 .name {
 	margin: 0;
 	width: 50%;
-	margin-top: 175px;
+	margin-top: 125px;
 	padding-left: 75px;
 	font-weight: 400px;
 	font-size: 30px;
@@ -84,7 +86,7 @@ body {
 .actionText {
 	margin: 0;
 	width: 50%;
-	margin-top: 300px;
+	margin-top: 250px;
 	padding-left: 100px;
 	font-weight: lighter;
 	font-size: 18px;
