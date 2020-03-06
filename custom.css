@@ -25,11 +25,16 @@ body {
 }
 
 .navList {
+	border: 1px solid black;
 	text-decoration: none;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	padding: 20px;
+	padding-top: 32px;
+	padding-left: 32px;
+	width: 50%;
+	justify-content: flex-start;
+	text-align: left;
 
 }
 
@@ -45,12 +50,10 @@ body {
 }
 
 .logo {
-	border: 1px solid black;
 	width: calc(50% + 31px);
 }
 
 .logoImage {
-	border: 1px solid black;
 	width: 60px;
 	height: 60px;
 }
@@ -76,28 +79,29 @@ body {
 	margin-top: 125px;
 	padding-left: 75px;
 	font-weight: lighter;
-	font-size: 30px;
+	font-size: 35px;
 	justify-content: flex-start;
 }
 
 .welcome {
 	width: 50%;
 	margin-top: 250px;
-	padding-left: 125px;
+	padding-left: 100px;
 	border: 1px solid black;
-	justify-content: flex-start;
 	align-items: center;
 	display: flex;
 	flex-direction: row;
 }
 
 .welcomeText {
+	margin: 0;
 	border: 1px solid black;
 	font-weight: 200px;
 	font-size: 18px;
 }
 
 .arrow {
+	margin: 0;
 	border: 1px solid black;
 	width: 35px;
 	height: 35px;
