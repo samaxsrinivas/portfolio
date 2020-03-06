@@ -9,34 +9,32 @@ body {
 	margin: auto;
 }
 .mainBody {
-	display: flex;
 	width: 100vw;
-	flex-direction: column;
 }
 
-.mainNav {
+.nav {
 	margin: 0;
 	width: 100vw;
-	height: 100px;
+	height: 75px;
 	display: flex;
 	flex-direction: row;
     }
     
 .leftSide {
+	width: calc(50% - 31px);
+}
+
+.navList {
+	text-decoration: none;
 	list-style: none;
-	justify-content: flex-start;
-	align-items: center;
 	display: flex;
 	flex-direction: row;
-	text-decoration: none;
-	z-index: 1;	
-	padding-left: 50px;
+	padding: 20px;
+
 }
 
 .navItem {
-	flex-direction: row;
 	font-size: 15px;
-	padding-right: 25px;
 	font-weight: 200px;
 }
 
@@ -46,17 +44,13 @@ body {
 	color: black;
 }
 
-.navLink:hover {
-	font-style: underline;
-}
-
 .logo {
-	width: 100vw;
-	display: flex;
-	z-index: 2;
+	border: 1px solid black;
+	width: calc(50% + 31px);
 }
 
 .logoImage {
+	border: 1px solid black;
 	width: 60px;
 	height: 60px;
 }
@@ -86,22 +80,29 @@ body {
 	justify-content: flex-start;
 }
 
-.welcomeText {
-	margin: 0;
+.welcome {
 	width: 50%;
 	margin-top: 250px;
 	padding-left: 125px;
+	border: 1px solid black;
+	justify-content: flex-start;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.welcomeText {
+	border: 1px solid black;
 	font-weight: 200px;
 	font-size: 18px;
-	justify-content: flex-start;
 }
 
 .arrow {
 	border: 1px solid black;
 	width: 35px;
 	height: 35px;
-	justify-content: flex-start;
 	align-items: center;
+
 }
 
 .bottomHalf {
