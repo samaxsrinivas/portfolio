@@ -94,7 +94,14 @@ body {
 	font-weight: 200px;
 	font-size: 18px;
 	justify-content: flex-start;
+}
 
+.arrow {
+	border: 1px solid black;
+	width: 35px;
+	height: 35px;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .bottomHalf {
