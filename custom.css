@@ -101,6 +101,8 @@ body {
 	justify-content: center;
 	align-items:center;
 	position: relative;
+	background-color: white;
+	z-index: -1;
 }
 
 .name {
@@ -199,7 +201,7 @@ body {
 	}
 
 	.hamburger {
-		margin:0;
+		margin-left: 75%;
 		padding-top: 10px;
 		align-items: flex-end;
 
