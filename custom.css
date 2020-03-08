@@ -108,7 +108,7 @@ body {
 .name {
 	margin: 0;
 	width: 50%;
-	margin-top: 200px;
+	margin-top: 15%;
 	padding-left: 75px;
 	font-weight: lighter;
 	font-size: 35px;
@@ -117,7 +117,7 @@ body {
 
 .welcome {
 	width: 50%;
-	margin-top: 325px;
+	margin-top: 25%;
 	padding-left: 100px;
 	align-items: center;
 	display: flex;
