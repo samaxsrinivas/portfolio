@@ -113,15 +113,17 @@ body {
 	font-weight: lighter;
 	font-size: 35px;
 	justify-content: flex-start;
+	position: relative;
 }
 
 .welcome {
 	width: 50%;
 	margin-top: 25%;
 	padding-left: 100px;
-	align-items: center;
+	align-items: flex-start;
 	display: flex;
 	flex-direction: row;
+	position: relative;
 }
 
 .welcomeText {
@@ -130,16 +132,11 @@ body {
 	font-size: 18px;
 }
 
-.welcomeLink {
-	text-decoration: none;
-	margin: 0;
-}
-
 .arrow {
 	margin: 0;
 	width: 35px;
 	height: 35px;
-	align-items: center;
+	align-items: flex-end;
 	padding-left: 5%;
 
 }
