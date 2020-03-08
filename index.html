@@ -22,6 +22,11 @@
       <div class="logo">
         <img class="logoImage" src="images/logo.png">
       </div>
+      <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
   </nav>
   <div class="intro">
    	<div class="name">
@@ -44,6 +49,12 @@
   		
   </div>
   </div>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+</script>
 
 </body>
 </html>
