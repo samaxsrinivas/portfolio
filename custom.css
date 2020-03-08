@@ -42,7 +42,7 @@ body {
 	margin: 0;
 	font-size: 15px;
 	font-weight: 200px;
-	padding-right: 30px;
+	padding-right: 50px;
 }
 
 .navLink {
@@ -71,6 +71,7 @@ body {
   height: 5px;
   background-color: #333;
   margin: 6px 0;
+  border-radius: 3px;
   transition: 0.4s;
 }
 
@@ -173,54 +174,51 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-.leftSide {
-	display: none;
-}
+	.leftSide {
+		display: none;
+	}
 
-.logo {
-	width: 50%;
-}
+	.logo {
+		width: 50%;
+	}
 
-.logoImage {
-	width: 50px;
-	height: 50px;
-	padding:5px;
-}
+	.logoImage {
+		width: 50px;
+		height: 50px;
+		padding:5px;
+	}
 
-.nav {
-	display: flex;
-}
+	.nav {
+		display: flex;
+	}
 
-.rightSide{
-	display: inline-flex;
-	width: 50%;
-	padding: 5px;
-}
+	.rightSide{
+		display: inline-flex;
+		width: 50%;
+		padding: 5px;
+	}
 
-.hamburger {
-	margin:0;
-	padding-top: 10px;
-	align-items: flex-end;
+	.hamburger {
+		margin:0;
+		padding-top: 10px;
+		align-items: flex-end;
 
-}
+	}
 
-.name {
-	font-size: 25px;
-	font-style: 200px;
-	margin-top: 30%;
-}
+	.name {
+		font-size: 25px;
+		font-style: 200px;
+		margin-top: 30%;
+	}
 
-.welcome {
-	margin-top: 15%;
-}
+	.welcome {
+		margin-top: 15%;
+	}
 
-.welcomeText {
-	font-size: 15px;
-	font-style: lighter;
-}
-
-
-
+	.welcomeText {
+		font-size: 15px;
+		font-style: lighter;
+	}
 
 
 }
