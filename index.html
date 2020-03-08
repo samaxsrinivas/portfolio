@@ -51,23 +51,36 @@
 
   </div>
 </div>
-  <div class="bottomHalf">
+  <div class="bottomHalf" onscroll="changeImage()">
     <ul>
-    <img class="galleryImages" src="images/1.jpg">
-    <img class="galleryImages" src="images/2.jpg">
+    <img id="imageContainer"class="galleryImages" src="images/1.jpg">
+   <!--  <img class="galleryImages" src="images/2.jpg">
     <img class="galleryImages" src="images/3.jpg">
     <img class="galleryImages" src="images/4.jpg">
     <img class="galleryImages" src="images/5.jpg">
-    <img class="galleryImages" src="images/6.jpg">
+    <img class="galleryImages" src="images/6.jpg"> -->
     </ul>
   		
   </div>
   </div>
 
   <script>
+
+    var runningCount = 0;
+
+    function changeImage(){
+      runningCount = runningCount + 1;
+      var imageIndex = runningCount % 6 + 1;
+      var imageFileName = "images/" + imageIndex + ".jpg";
+      document.getElementById("imageContainer").src = imageFileName;
+
+    }
+
     function myFunction(x) {
       x.classList.toggle("change");
     }
+
+
 </script>
 
 </body>
