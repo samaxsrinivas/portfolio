@@ -15,35 +15,39 @@ body {
 .nav {
 	margin: 0;
 	width: 100vw;
-	height: 75px;
+	height: 70px;
 	display: flex;
 	flex-direction: row;
+	background-color: white;
+	position: fixed;
     }
+
     
 .leftSide {
 	width: calc(50% - 31px);
 }
 
 .navList {
-	border: 1px solid black;
+	margin: 0;
 	text-decoration: none;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	padding-top: 32px;
-	padding-left: 32px;
+	padding-top: 25px;
+	padding-left: 50px;
 	width: 50%;
-	justify-content: flex-start;
-	text-align: left;
 
 }
 
 .navItem {
+	margin: 0;
 	font-size: 15px;
 	font-weight: 200px;
+	padding-right: 30px;
 }
 
 .navLink {
+	margin: 0;
 	text-decoration: none;
 	list-style: none;
 	color: black;
@@ -56,11 +60,13 @@ body {
 .logoImage {
 	width: 60px;
 	height: 60px;
+	margin-top: 5px;
 }
 
-.hamburger {
+.rightSide{
 	display: none;
 	cursor: pointer;
+	margin: 0;
 }
 
 .bar1, .bar2, .bar3 {
@@ -96,12 +102,13 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items:center;
+	position: relative;
 }
 
 .name {
 	margin: 0;
 	width: 50%;
-	margin-top: 125px;
+	margin-top: 200px;
 	padding-left: 75px;
 	font-weight: lighter;
 	font-size: 35px;
@@ -110,9 +117,8 @@ body {
 
 .welcome {
 	width: 50%;
-	margin-top: 250px;
+	margin-top: 325px;
 	padding-left: 100px;
-	border: 1px solid black;
 	align-items: center;
 	display: flex;
 	flex-direction: row;
@@ -120,17 +126,16 @@ body {
 
 .welcomeText {
 	margin: 0;
-	border: 1px solid black;
 	font-weight: 200px;
 	font-size: 18px;
 }
 
 .arrow {
 	margin: 0;
-	border: 1px solid black;
 	width: 35px;
 	height: 35px;
 	align-items: center;
+	padding-left: 5%;
 
 }
 
@@ -148,10 +153,64 @@ body {
 
 }
 
+@media only screen and (max-width: 850px) {
+
+	.intro {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.name {
+		margin:0;
+		padding: 0;
+		width: 80%;
+	}
+	.welcome {
+		margin: 0;
+		padding: 0;
+		width: 80%;
+	}
+}
+
+
 @media only screen and (max-width: 600px) {
 
+.leftSide {
+	display: none;
+}
+
+.logo {
+	width: 50%;
+}
+
+.logoImage {
+	width: 50px;
+	height: 50px;
+	padding:5px;
+}
+
+.nav {
+	display: flex;
+}
+
+.rightSide{
+	display: inline-flex;
+	width: 50%;
+	padding: 5px;
+}
+
 .hamburger {
-	display: inline-block;
+	margin:0;
+
+}
+
+.name {
+	font-size: 25px;
+	font-style: 200px;
+}
+
+.welcomeText {
+	font-size: 15px;
+	font-style: lighter;
 }
 
 
