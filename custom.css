@@ -130,6 +130,11 @@ body {
 	font-size: 18px;
 }
 
+.welcomeLink {
+	text-decoration: none;
+	margin: 0;
+}
+
 .arrow {
 	margin: 0;
 	width: 35px;
@@ -162,7 +167,7 @@ body {
 	.name {
 		margin:0;
 		padding: 0;
-		width: 80%;
+		width: 75%;
 		margin-top: 15%;
 	}
 	.welcome {
@@ -202,6 +207,7 @@ body {
 
 	.hamburger {
 		margin-left: 75%;
+		margin-top: 5%;
 
 	}
 
@@ -212,7 +218,7 @@ body {
 	}
 
 	.welcome {
-		margin-top: 15%;
+		margin-top: 13%;
 	}
 
 	.welcomeText {
