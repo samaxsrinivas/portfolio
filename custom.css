@@ -142,8 +142,7 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
 }
 
 .welcomeLink:hover {
@@ -160,10 +159,10 @@ body {
 }
 
 .arrow {
+	box-sizing: unset;
 	margin: 0;
 	width: 35px;
 	height: 35px;
-	align-items: flex-end;
 	padding-left: 5%;
 
 }
@@ -191,7 +190,9 @@ body {
 
 	.intro {
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left: 60px;
 	}
 	.name {
 		margin:0;
@@ -240,6 +241,12 @@ body {
 
 	}
 
+	.intro{
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left:50px;
+	}
+
 	.name {
 		font-size: 25px;
 		font-style: 200px;
@@ -252,7 +259,11 @@ body {
 
 	.welcomeText {
 		font-size: 15px;
-		font-style: lighter;
+	}
+
+	.arrow {
+		width: 30px;
+		height: 30px;
 	}
 
 
