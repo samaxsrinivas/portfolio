@@ -14,45 +14,24 @@
   <div class="topHalf">
   	<nav class="nav">
       <div class="leftSide">
-        <div class="menu-wrap">
-          <input type="checkbox" class="toggler">
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
-            <div>
-              <div>
-                <ul class="navList">
-                  <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
-                  <li class="navItem"><a class="navLink" href="work.html">Work</a></li>
-                  <li class="navItem"><a class="navLink" href="index.html">About</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <header class="showcase">
-          <div class="showcase showcase-inner">
-            <h1>Welcome</h1>
-            <p>Lorem 20</p>
-          </div>
-        </header>
-      <!--   <ul class="navList">
+        <ul class="navList">
           <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
           <li class="navItem"><a class="navLink" href="work.html">Work</a></li>
           <li class="navItem"><a class="navLink" href="index.html">About</a></li>
-        </ul> -->
+        </ul>
+      </div>
       <div class="logo">
-        <a class="welcomeLink" href="index.html">
+        <a class="logoLink" href="index.html">
         <img class="logoImage" src="images/logo.png">
         </a>
       </div>
-     <!--  <div class="rightSide">
+      <div class="rightSide">
         <div class="hamburger" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-      </div> -->
+      </div>
    <!--    <div class="overlay">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -66,8 +45,12 @@
    		Sama Srinivas, a visual designer working towards an inspiring career.
    	</div>
    	<div class="welcome">
-   		<div class="welcomeText">Welcome to my humble abode</div>
-      <div class="arrow"><img src="images/arrow.svg"></div>
+      <a class="welcomeLink" href="work.html">
+     		<div class="welcomeText">Welcome to my humble abode</div>
+        <div class="arrow">
+            <img src="images/arrow.svg">
+        </div>
+      </a>
    	</div>
 
   </div>
@@ -75,18 +58,15 @@
   <div class="bottomHalf" onclick="changeImage()">
     <ul>
     <img id="imageContainer"class="galleryImages" src="images/1.jpg">
-    <!-- <img class="galleryImages" src="images/2.jpg">
+   <!--  <img class="galleryImages" src="images/2.jpg">
     <img class="galleryImages" src="images/3.jpg">
     <img class="galleryImages" src="images/4.jpg">
     <img class="galleryImages" src="images/5.jpg">
     <img class="galleryImages" src="images/6.jpg"> -->
     </ul>
-
-
-  		
+		
   </div>
   </div>
-
   <script>
 
     var runningCount = 0;
@@ -102,7 +82,6 @@
     function myFunction(x) {
       x.classList.toggle("change");
     }
-
 
 </script>
 
