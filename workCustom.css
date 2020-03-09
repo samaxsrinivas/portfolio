@@ -115,11 +115,6 @@ body {
   margin: auto;
 }
 
-/*h1 {
-  font-size: 50px;
-  word-break: break-all;
-}*/
-
 .row {
   display: flex;
   justify-content: center;
@@ -130,18 +125,6 @@ body {
 .galleryColumn {
 	padding: 10px;
 }
-
-/* Add padding BETWEEN each column (if you want) */
-/*.row,
-.row > .column {
-  padding: 8px;
-}*/
-
-/* Create four equal columns that floats next to each other */
-/*.column {
-  width: 100%;
-}*/
-
 
 /* Clear floats after rows */
 .row:after {
@@ -162,16 +145,51 @@ body {
 	height: 60vh;
 }
 
+footer{
+	width: 100%;
+	height: 75vh;
+	overflow: hidden;
+}
+
+.footer {
+	width: 100%;
+	height: 100%;
+/*	background-color: black;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footerContent {
+	z-index: 3;
+	display: flex;
+	flex-direction: row;
+}
+
+.footerText {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.arrow {
+	margin: 0;
+	width: 32px;
+	height: 32px;
+	padding-left: 3%;
+	color: #fff;
+}
+
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
 
 .main {
 	max-width: 85%;
 }
   .window {
   	width: 100%;
-  	height: 35vh;
+  	max-height: 35vh;
   	object-fit: cover;
   }
 }
@@ -193,7 +211,7 @@ body {
 	}
   .window {
     width: 100%;
-    height: 300px;
+    max-height: 300px;
   }
 
   .leftSide {
@@ -224,5 +242,9 @@ body {
 		margin-left: 75%;
 		margin-top: 5%;
 
+	}
+
+	footer {
+		height: 100vh;
 	}
 }
