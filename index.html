@@ -72,10 +72,16 @@
     var runningCount = 0;
 
     function changeImage(){
+
       runningCount = runningCount + 1;
       var imageIndex = runningCount % 6 + 1;
       var imageFileName = "images/" + imageIndex + ".jpg";
       document.getElementById("imageContainer").src = imageFileName;
+      
+      // runningCount = runningCount + 1;
+      // var imageIndex = runningCount % 6 + 1;
+      // var imageFileName = "images/" + imageIndex + ".jpg";
+      // document.getElementById("imageContainer").src = imageFileName;
 
     }
 
