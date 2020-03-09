@@ -150,6 +150,7 @@ body {
 }
 
 .welcomeText {
+	box-sizing: unset;
 	margin: 0;
 	font-weight: 200px;
 	font-size: 18px;
@@ -161,9 +162,9 @@ body {
 .arrow {
 	box-sizing: unset;
 	margin: 0;
-	width: 35px;
-	height: 35px;
-	padding-left: 5%;
+	width: 32px;
+	height: 32px;
+	padding-left: 3%;
 
 }
 
@@ -254,16 +255,17 @@ body {
 	}
 
 	.welcome {
-		margin-top: 13%;
+		margin-top: 15%;
 	}
 
 	.welcomeText {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.arrow {
 		width: 30px;
 		height: 30px;
+		padding-left: 3%;
 	}
 
 
