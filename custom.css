@@ -105,8 +105,23 @@ body {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	background-color: white;
 }
 
+.overlay a {
+	margin: 0;
+	color: black;
+  	padding: 12px 16px;
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.show {
+		display: block;
+	}
 
 .topHalf {
 	width: 100%;
@@ -183,11 +198,6 @@ body {
 	cursor: pointer;
 }
 
-.panel.five {
-	margin-bottom: 400px;
-
-}
-
 .galleryImages {
 	margin: 0;
 	padding: 0;
@@ -215,6 +225,10 @@ body {
 		padding: 0;
 		width: 80%;
 		margin-top: 10%;
+	}
+
+	.overlay {
+		display: none;
 	}
 }
 
@@ -248,21 +262,11 @@ body {
 	.hamburger {
 		margin-left: 75%;
 		margin-top: 3%;
-
 	}
-
-	.overlay {
-		position: absolute;
-		z-index: 10;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-	}
-
-	.show  .overlay {
+/*
+	.show {
 		display: block;
-	}
+	}*/
 
 	.intro{
 		justify-content: flex-start;

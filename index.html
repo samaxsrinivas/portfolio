@@ -32,12 +32,10 @@
           <div class="bar3"></div>
         </div>
       </div>
-      <div class="overlay" onclick="myFunction(this)">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+      <div id="overlay" class="overlay" onclick="myFunction(this)">
+          <a href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
       </div>
   </nav>
   <div class="intro">
@@ -77,18 +75,12 @@
       var imageIndex = runningCount % 6 + 1;
       var imageFileName = "images/" + imageIndex + ".jpg";
       document.getElementById("imageContainer").src = imageFileName;
-
-      // runningCount = runningCount + 1;
-      // var imageIndex = runningCount % 6 + 1;
-      // var imageFileName = "images/" + imageIndex + ".jpg";
-      // document.getElementById("imageContainer").src = imageFileName;
-
     }
 
     function myFunction(x) {
       x.classList.toggle("change");
 
-      document.getElementByClassName("overlay")[0].toggle('show')[1];
+      var overlay = document.getElementById("overlay")[0];overlay.classlist.toggle("show");
     }
 
 </script>
