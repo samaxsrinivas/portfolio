@@ -32,13 +32,13 @@
           <div class="bar3"></div>
         </div>
       </div>
-   <!--    <div class="overlay">
+      <div class="overlay" onclick="myFunction(this)">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="work.html">Work</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-      </div> -->
+      </div>
   </nav>
   <div class="intro">
    	<div class="name">
@@ -87,6 +87,8 @@
 
     function myFunction(x) {
       x.classList.toggle("change");
+
+      document.getElementByClassName("overlay")[0].toggle('show')[1];
     }
 
 </script>
