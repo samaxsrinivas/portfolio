@@ -1,6 +1,7 @@
 * {
       margin: 0 auto;
       padding:0;
+      box-sizing: border-box;
     }
 body {
 	font-family: poppins;
@@ -88,85 +89,59 @@ body {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
-section.section:last-child {
-  margin-bottom: 0;
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
 }
-section.section h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
+
+.row {
+  margin: 8px -16px;
 }
-section.section p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
 }
-section.section p:last-child {
-  margin-bottom: 0;
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
 }
-section.section.content {
-  padding: 40px 0;
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-section.section.parallax {
-  height: 600px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-section.section.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-section.section.parallax-1 {
-  background-image: url("images/1.jpg");
-}
-section.section.parallax-2 {
-  background-image: url("images/2.jpg");
-}
-section.section.parallax-3 {
-  background-image: url("images/3.jpg");
-}
-@media all and (min-width: 600px) {
-  section.section h2 {
-    font-size: 42px;
-  }
-  section.section p {
-    font-size: 20px;
-  }
-  section.section.parallax h1 {
-    font-size: 96px;
-  }
-}
-@media all and (min-width: 960px) {
-  section.section.parallax h1 {
-    font-size: 160px;
+
+/* Content */
+/*.content {
+  background-color: white;
+  padding: 10px;
+}*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
   }
 }
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 
-
-
-
-
-
-
-
-@media only screen and (max-width: 850px) {}
-
-
-@media only screen and (max-width: 600px) {
-
-	.leftSide {
+  .leftSide {
 		display: none;
 	}
 
@@ -195,5 +170,4 @@ section.section.parallax-3 {
 		margin-top: 5%;
 
 	}
-
 }
