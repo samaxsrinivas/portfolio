@@ -32,7 +32,7 @@
           <div class="bar3"></div>
         </div>
       </div>
-      <div id="overlay" class="overlay" onclick="myFunction(this)">
+      <div class="overlay">
           <a href="index.html">Home</a>
           <a href="work.html">Work</a>
           <a href="about.html">About</a>
@@ -116,8 +116,8 @@
     function myFunction(x) {
       x.classList.toggle("change");
 
-      var overlay = document.getElementById("overlay")[0];
-      x.overlay.toggle("show");
+      var overlay = document.getElementsByClassName("overlay")[0];
+      overlay.toggle("show");
     }
 
 </script>

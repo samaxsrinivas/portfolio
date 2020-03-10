@@ -102,7 +102,7 @@ img {
 }
 
 .overlay {
-	visibility: hidden;
+	display: none;
 	position: absolute;
 	z-index: 10;
 	top: 0;
@@ -122,10 +122,6 @@ img {
 	justify-content: flex-start;
 	align-items: center;
 }
-
-.show {
-		display: block;
-	}
 
 .topHalf {
 	width: 100%;
@@ -317,7 +313,7 @@ img {
 	}
 
 	.show {
-		visibility: visible;
+		display: block;
 		position: absolute;
 	}
 
