@@ -42,9 +42,17 @@ body {
 .navItem {
 	margin: 0;
 	font-size: 15px;
-	font-weight: 200;
+	font-weight: 300;
 	padding-right: 50px;
 }
+.navItem:hover {
+	text-decoration: underline;
+}
+
+.navItem:active {
+	text-decoration: underline;
+}
+
 
 .navLink {
 	margin: 0;
