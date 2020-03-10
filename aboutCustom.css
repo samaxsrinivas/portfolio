@@ -119,15 +119,15 @@ section.section.parallax {
 }
 section.section.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
+  font-size: 30px;
+  line-height: 400px;
   font-weight: 300;
   text-align: center;
-  text-transform: uppercase;
+  vertical-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.section.parallax-1 {
-  background-image: url("images/1.jpg");
+  background-image: url("images/about1.JPG");
 }
 section.section.parallax-2 {
   background-image: url("images/samasrinivas.jpg");
@@ -136,17 +136,8 @@ section.section.parallax-2 {
 section.section.parallax-3 {
   background-image: url("images/3.jpg");
 }
-@media all and (min-width: 600px) {
-  section.section h2 {
-    font-size: 42px;
-  }
-  section.section p {
-    font-size: 20px;
-  }
-  section.section.parallax h1 {
-    font-size: 96px;
-  }
-}
+
+
 
 footer{
 	width: 100%;
@@ -246,6 +237,17 @@ footer a:hover {
 
 	}
 
+	section.section h2 {
+    font-size: 42px;
+	  }
+	  section.section p {
+	    font-size: 20px;
+	  }
+	  section.section.parallax h1 {
+	    font-size: 50px;
+	  }
+}
+
 	footer {
 		height: 100vh;
 	}
@@ -254,5 +256,6 @@ footer a:hover {
 		text-decoration: underline;
 		color: white;
 	}
+}
 
 }

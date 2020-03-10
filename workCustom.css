@@ -95,6 +95,7 @@ body {
 	background-color: #f2f2f2;
 	padding-top: 150px;
 	padding-bottom: 100px;
+	padding-left: 10%;
 	vertical-align: center;
 }
 
@@ -110,7 +111,6 @@ body {
 
 .main {
 	clear: both;
-	max-width: 80%;
 	margin: auto;
 }
 
@@ -119,13 +119,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 80%;
+
 }
 
 /* Content */
 .content {
+  max-width: 48%;
+  max-height: 48%;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-bottom: 100px;
-  max-width: 50%;
-  max-height: 50%;
 
 }
 
@@ -137,7 +141,7 @@ body {
 
 h3 {
 	font-size: 20px;
-	font-weight: 200;
+	font-weight: 300;
 	padding-top: 5%;
 }
 
@@ -185,7 +189,7 @@ footer a:hover {
 	font-size: 2.5rem;
 	text-decoration: none;
 	list-style: none;
-	font-weight: lighter;
+	font-weight: 300;
 }
 
 
