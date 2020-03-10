@@ -166,7 +166,7 @@ section.section.parallax-3 {
 }
 
 section.section.parallax-4 {
-  background-image: url("images/orange.png");
+  background-image: url("images/blue.jpg");
 }
 
 .skills {
@@ -175,6 +175,7 @@ section.section.parallax-4 {
 }
 
 h4 {
+	width: 90%;
 	color: rgba(255, 255, 255, 1);
 	font-weight: 300;
 	text-align: center;
@@ -242,7 +243,8 @@ h4 {
 	  }
 
 	  section.section.parallax h4{
-	  	font-size: 20px;
+	  	font-size: 25px;
+	  	width: 100%;
 	  }
 
 }
