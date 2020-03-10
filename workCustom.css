@@ -221,12 +221,10 @@ footer a:hover {
 	}
 
 	.content {
-		max-width: 100%;
-		padding: 15px;
-	}
+		max-width: 100%;}
 
 	.row {
-		max-width: 95%
+		max-width: 95%;
 	}
 
   .window {
