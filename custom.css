@@ -330,17 +330,18 @@ img {
 	}
 
 	.welcome {
-		margin-top: 15%;
+		margin-top: 20%;
+		width: 95%;
 	}
 
 	.welcomeText {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.arrow {
 		width: 30px;
 		height: 30px;
-		padding-left: 3%;
+		margin-left: 3%;
 	}
 
 	.prev, .next {
