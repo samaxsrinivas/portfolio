@@ -215,8 +215,11 @@ footer a:hover {
 		max-width: 95%;
 	}
 
+	.title {
+		padding-left: 0;
+	}
+
 	.pageTitle {
-		padding-left: 5%;
 		padding-top: 50px;
 		font-size: 40px;
 	}
