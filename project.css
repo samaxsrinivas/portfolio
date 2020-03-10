@@ -163,8 +163,9 @@ img {
 }
 
 p {
-	width: 75%;
+	width: 85%;
 	font-size: 18px;
+	padding: 5px;
 }
 
 @media screen and (max-width: 600px) {
