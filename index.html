@@ -54,14 +54,34 @@
   </div>
 </div>
   <div class="bottomHalf" onclick="showSlides()">
-    <ul>
-    <img class="galleryImages" src="images/1.jpg">
-    <img class="galleryImages" src="images/2.jpg">
-    <img class="galleryImages" src="images/3.jpg">
-    <img class="galleryImages" src="images/4.jpg">
-    <img class="galleryImages" src="images/5.jpg">
-    <img class="galleryImages" src="images/6.jpg">
-    </ul>
+
+    <div class="mySlides">
+      <a href="work.html">
+      <img class="galleryImages" src="images/1.jpg">
+      <div class="text">Caption One</div>
+      </a>
+    </div>
+    <div class="mySlides"> 
+      <img class="galleryImages" src="images/4.jpg">
+      <div class="text">IMA Logo Redesign</div>
+    </div>
+    <div class="mySlides">
+      <img class="galleryImages" src="images/3.jpg">
+      <div class="text">Geometric Pattern</div>
+    </div>
+    <div class="mySlides">
+      <img class="galleryImages" src="images/2.jpg">
+      <div class="text">Caption Four</div>
+    </div>
+    <div class="mySlides">
+      <img class="galleryImages" src="images/5.jpg">
+      <div class="text">Caption Five</div>
+    </div>
+    <div class="mySlides">
+      <img class="galleryImages" src="images/6.jpg">
+      <div class="text">Caption Six</div>
+    </div>
+
     <a class="prev" onclick="plusSlides(- 1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 		
@@ -82,7 +102,7 @@
 
     function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("galleryImages");
+      var slides = document.getElementsByClassName("mySlides");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {

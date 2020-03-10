@@ -204,6 +204,12 @@ img {
 	margin: auto;
 }
 
+.mySlides {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .galleryImages {
 	margin: 0;
 	padding: 0;
@@ -220,28 +226,36 @@ img {
   vertical-align: center;
   top: 33%;
   width: auto;
-  padding: 16px;
+  padding: 20px;
   color: white;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 75px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+  left: 0;
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -335,6 +349,11 @@ img {
 	.prev, .next {
 		top: 40%;
 		font-size: 40px;
+	}
+
+	.text {
+		top: 40%;
+		font-size: 30px;
 	}
 
 
