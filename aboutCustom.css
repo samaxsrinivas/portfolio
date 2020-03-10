@@ -111,11 +111,11 @@ section.section.content {
   padding: 40px 0;
 }
 section.section.parallax {
-  height: 600px;
+  height: 60%; 
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  object-fit: contain;
 }
 section.section.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
@@ -130,7 +130,8 @@ section.section.parallax-1 {
   background-image: url("images/1.jpg");
 }
 section.section.parallax-2 {
-  background-image: url("images/2.jpg");
+  background-image: url("images/samasrinivas.jpg");
+  object-fit: contain;
 }
 section.section.parallax-3 {
   background-image: url("images/3.jpg");
