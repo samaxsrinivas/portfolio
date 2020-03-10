@@ -190,16 +190,8 @@ footer a:hover {
 	font-size: 2.5rem;
 	text-decoration: none;
 	list-style: none;
-	font-weight: lighter;
+	font-weight: 300;
 }
-
-
-
-
-
-
-
-
 
 
 @media all and (min-width: 960px) {
@@ -207,14 +199,6 @@ footer a:hover {
     font-size: 75px;
   }
 }
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 850px) {}
 
@@ -272,7 +256,7 @@ footer a:hover {
 	}
 
 	.footerText {
-		font-size: 30px;
+		font-size: 1.5rem;
 	}
 
 }

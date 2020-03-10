@@ -225,6 +225,10 @@ footer a:hover {
 		padding: 15px;
 	}
 
+	.row {
+		max-width: 95%
+	}
+
   .window {
     width: 100%;
   }
@@ -266,5 +270,9 @@ footer a:hover {
 	footer a {
 		text-decoration: underline;
 		color: white;
+	}
+
+	.footerText {
+		font-size: 1.5rem;
 	}
 }
