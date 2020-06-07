@@ -1,137 +1,142 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<title>Sama Srinivas</title>
-	<link rel="stylesheet" type="text/css" href="custom.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700&display=swap" rel="stylesheet">
-  <!-- <link href="css/popup_view.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Sama Srinivas</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700&display=swap" rel="stylesheet">
+    <!-- <link href="css/popup_view.css" rel="stylesheet"> -->
 
 </head>
+
 <body>
-  <div class="mainBody">
-  <div class="topHalf">
-  	<nav class="nav">
-        <div class="leftSide">
-          <ul class="navList">
-            <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
-            <li class="navItem"><a class="navLink" href="work.html">Work</a></li>
-            <li class="navItem"><a class="navLink" href="about.html">About</a></li>
-          </ul>
+    <div class="mainBody">
+        <div class="topHalf">
+            <nav class="nav">
+                <div class="leftSide">
+                    <ul class="navList">
+                        <li class="navItem"><a class="navLink" href="https://samaxsrinivas.github.io/portfolio/">Home</a></li>
+                        <li class="navItem"><a class="navLink" href="work.html">Work</a></li>
+                        <li class="navItem"><a class="navLink" href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a class="logoLink" href="https://samaxsrinivas.github.io/portfolio/">
+                        <img class="logoImage" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="rightSide">
+                    <div class="hamburger" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+            <div class="intro">
+                <div class="name">
+                    Sama Srinivas, a visual designer working towards an inspiring career.
+                </div>
+                <div class="welcome">
+                    <a class="welcomeLink" href="work.html">
+                        <div class="welcomeText">Welcome to my humble abode</div>
+                        <div class="arrow">
+                            <img src="images/arrow.svg">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
         </div>
-      <div class="logo">
-        <a class="logoLink" href="index.html">
-        <img class="logoImage" src="images/logo.png">
-        </a>
-      </div>
-      <div class="rightSide">
-        <div class="hamburger" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+        <div class="bottomHalf" onclick="showSlides()">
+
+            <div class="mySlides">
+                <a href="project.html">
+                    <img class="galleryImages" src="images/logoCover.png">
+                    <!-- <div class="text">Caption Six</div> -->
+                </a>
+            </div>
+
+            <div class="mySlides">
+                <a href="project.html">
+                    <img class="galleryImages" src="images/brochure1.jpg">
+                    <!-- <div class="text">NYU Athletics Annual VBC Brochure</div> -->
+                </a>
+            </div>
+            <div class="mySlides">
+                <a href="project.html">
+                    <img class="galleryImages" src="images/logoCover.jpg">
+                    <!-- <div class="text">IMA Logo Redesign</div> -->
+                </a>
+            </div>
+            <div class="mySlides">
+                <a href="project.html">
+                    <img class="galleryImages" src="images/3.jpg">
+                    <!-- <div class="text">Geometric Pattern</div> -->
+                </a>
+            </div>
+            <div class="mySlides">
+                <a href="project.html">
+                    <img class="galleryImages" src="images/web.png">
+                    <!-- <div class="text">Caption Four</div> -->
+                </a>
+            </div>
+            <div class="mySlides">
+                <a href="project.html">
+                    <img class="galleryImages" src="images/college4you.png">
+                    <!-- <div class="text">Caption Five</div> -->
+                </a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(- 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
-      </div>
-      <div class="overlay">
-          <a href="index.html">Home</a>
-          <a href="work.html">Work</a>
-          <a href="about.html">About</a>
-      </div>
-  </nav>
-  <div class="intro">
-   	<div class="name">
-   		Sama Srinivas, a visual designer working towards an inspiring career.
-   	</div>
-   	<div class="welcome">
-      <a class="welcomeLink" href="work.html">
-     		<div class="welcomeText">Welcome to my humble abode</div>
-        <div class="arrow">
-            <img src="images/arrow.svg">
-        </div>
-      </a>
-   	</div>
-
-  </div>
-</div>
-  <div class="bottomHalf" onclick="showSlides()">
-
-    <div class="mySlides">
-      <a href="project.html">
-      <img class="galleryImages" src="images/logoCover.png">
-      <!-- <div class="text">Caption Six</div> -->
-    </a>
     </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-    <div class="mySlides">
-      <a href="project.html">
-      <img class="galleryImages" src="images/brochure1.jpg">
-      <!-- <div class="text">NYU Athletics Annual VBC Brochure</div> -->
-      </a>
-    </div>
-    <div class="mySlides"> 
-      <a href="project.html">
-      <img class="galleryImages" src="images/logoCover.jpg">
-      <!-- <div class="text">IMA Logo Redesign</div> -->
-      </a>
-    </div>
-    <div class="mySlides">
-      <a href="project.html">
-      <img class="galleryImages" src="images/3.jpg">
-      <!-- <div class="text">Geometric Pattern</div> -->
-    </a>
-    </div>
-    <div class="mySlides">
-      <a href="project.html">
-      <img class="galleryImages" src="images/web.png">
-      <!-- <div class="text">Caption Four</div> -->
-    </a>
-    </div>
-    <div class="mySlides">
-      <a href="project.html">
-      <img class="galleryImages" src="images/college4you.png">
-      <!-- <div class="text">Caption Five</div> -->
-    </a>
-    </div>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    <a class="prev" onclick="plusSlides(- 1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		
-  </div>
-  </div>
-  <script>
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-    var slideIndex = 1;
-    showSlides(slideIndex);
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+        function myFunction(x) {
+            x.classList.toggle("change");
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-
-      slides[slideIndex-1].style.display = "block"; 
-      setTimeout(showSlides, 2000); 
-    }
-
-    function myFunction(x) {
-      x.classList.toggle("change");
-
-      var overlay = document.getElementsByClassName("overlay")[0];
-      overlay.classList.toggle("show");
-    }
-
-</script>
+            var overlay = document.getElementsByClassName("overlay")[0];
+            overlay.classList.toggle("show");
+        }
+    </script>
 
 </body>
+
 </html>
